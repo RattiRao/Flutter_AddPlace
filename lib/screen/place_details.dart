@@ -13,7 +13,7 @@ class PlaceDetailsScreen extends StatelessWidget {
       ),
       body: Center(
           child: Text(
-        place.title,
+        place.image == null ? 'No Image' : 'Has Image',
         style: Theme.of(context)
             .textTheme
             .bodyLarge!
